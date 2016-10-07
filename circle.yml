@@ -1,0 +1,11 @@
+machine:
+  services:
+    - docker
+
+dependencies:
+  override:
+    - docker build -t bertomartin/sample-node .
+
+test:
+  override:
+    - docker run bertomartin/sample-node npm test
