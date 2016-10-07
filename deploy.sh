@@ -2,7 +2,7 @@
 # note: these first 2 commands happen on the machine that runs the deployment whether that's your local machine, jenkins or circleci
 # docker build -t bertomartin/sample-node . && docker run --rm bertomartin/sample-node npm test
 #!/bin/bash
-docker build -t bertomartin/sample-node .
+#docker build -t bertomartin/sample-node .
 docker push bertomartin/sample-node
 
 ssh deploy@104.131.107.79 << EOF
