@@ -4,7 +4,7 @@ var express = require("express");
 
 express()
   .get("*", function (req, res) {
-    res.send("Hello world");
+    res.send("Hi world");
   })
   .listen(3000, function(err){
     if(err){
